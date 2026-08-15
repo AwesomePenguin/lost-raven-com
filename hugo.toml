@@ -1,0 +1,88 @@
+baseURL = "https://lost-raven.com/"
+title   = "Lost Raven"
+theme   = "hello-friend-ng"
+
+languageCode  = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+disableRSS      = false
+disableSitemap  = false
+disable404      = false
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = "page"
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  description = "Lost Raven — music and stories."
+  keywords    = "Lost Raven, Finale Radio, music, AI music"
+  images      = [""]
+
+  disableReadOtherPosts = true
+  enableThemeToggle     = false
+  enableSharingButtons  = false
+  enableReadingTime     = true
+  enableGlobalLanguageMenu = true
+
+  customCSS = []
+  customJS  = []
+
+  [params.author]
+    name = "Lost Raven"
+
+  [params.footer]
+    trademark  = 2026
+    rss        = false
+    copyright  = false
+    author     = false
+    topText    = []
+    bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+
+  [params.favicon.color]
+    mask          = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme         = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "lost-raven"
+    logoHomeLink = "/"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight       = 1
+
+  [languages.ja]
+    languageName = "日本語"
+    weight       = 2
+    hasCJKLanguage = true
+
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight       = 3
+    hasCJKLanguage = true

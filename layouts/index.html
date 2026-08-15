@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <div class="content-center">
+        <main>
+            <div>
+                <h1>{{ .Site.Title }}</h1>
+
+                {{ partial "subtitle.html" . }}
+
+                {{ .Content }}
+
+                {{- with .Params.links }}
+                    <ul class="links-list">
+                        {{- range . }}
+                            <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></li>
+                        {{- end }}
+                    </ul>
+                {{- end }}
+
+                {{- with .Site.Params.social }}
+                    <div>
+                        {{ partial "social-icons.html" . }}
+                    </div>
+                {{- end }}
+            </div>
+        </main>
+    </div>
+{{ end }}
