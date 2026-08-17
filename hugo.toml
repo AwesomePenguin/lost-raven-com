@@ -2,7 +2,6 @@ baseURL = "https://lost-raven.com/"
 title   = "Lost Raven"
 theme   = "hello-friend-ng"
 
-languageCode  = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
@@ -74,15 +73,18 @@ publishDir   = "public"
 
 [languages]
   [languages.en]
-    languageName = "English"
-    weight       = 1
+    label  = "English"
+    locale = "en-US"
+    weight = 1
 
   [languages.ja]
-    languageName = "日本語"
-    weight       = 2
+    label  = "日本語"
+    locale = "ja-JP"
+    weight = 2
     hasCJKLanguage = true
 
   [languages.zh-cn]
-    languageName = "简体中文"
-    weight       = 3
+    label  = "简体中文"
+    locale = "zh-CN"
+    weight = 3
     hasCJKLanguage = true
