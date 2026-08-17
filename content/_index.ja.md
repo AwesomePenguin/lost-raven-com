@@ -1,12 +1,21 @@
 ---
 title: "Lost Raven"
 links:
-  - name: "Finale Radio（例）"
-    url: "https://example.com/finale-radio"
-  - name: "Spotifyで聴く（例）"
-    url: "https://example.com/spotify"
-  - name: "最新情報をフォロー（例）"
-    url: "https://example.com/updates"
+  - divider: "音楽"
+  - name: "Spotify"
+    url: "https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih"
+  - name: "Apple Music"
+    url: "https://music.apple.com/us/artist/lost-raven/6790381614"
+  - divider: "動画 & ラジオ"
+  - name: "YouTube @lost_raven_official"
+    url: "https://www.youtube.com/@lost_raven_official"
+  - name: "YouTube @finale_radio"
+    url: "https://www.youtube.com/@finale_radio"
+  - name: "Bilibili"
+    url: "https://space.bilibili.com/3707053952469257"
+  - divider: "ソーシャル"
+  - name: "Instagram"
+    url: "https://www.instagram.com/lost_raven_official"
 ---
 
-Lost Raven（ロスト・レイヴン）— AIツールの力を借りて制作する音楽と物語。現在は深夜のコンフォートラジオ番組『Finale Radio』を配信中。今後も新しいプロジェクトを予定しています。
+音楽と物語。深夜ラジオ番組『Finale Radio』のクリエイター。

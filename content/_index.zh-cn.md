@@ -1,12 +1,21 @@
 ---
 title: "Lost Raven"
 links:
-  - name: "Finale Radio（示例）"
-    url: "https://example.com/finale-radio"
-  - name: "在 Spotify 收听（示例）"
-    url: "https://example.com/spotify"
-  - name: "关注更新（示例）"
-    url: "https://example.com/updates"
+  - divider: "音乐"
+  - name: "Spotify"
+    url: "https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih"
+  - name: "Apple Music"
+    url: "https://music.apple.com/us/artist/lost-raven/6790381614"
+  - divider: "视频 & 电台"
+  - name: "YouTube @lost_raven_official"
+    url: "https://www.youtube.com/@lost_raven_official"
+  - name: "YouTube @finale_radio"
+    url: "https://www.youtube.com/@finale_radio"
+  - name: "Bilibili"
+    url: "https://space.bilibili.com/3707053952469257"
+  - divider: "社交"
+  - name: "Instagram"
+    url: "https://www.instagram.com/lost_raven_official"
 ---
 
-Lost Raven —— 借助 AI 工具创作与制作的音乐与故事。目前主打深夜疗愈电台节目《Finale Radio》，更多项目陆续更新中。
+音乐与故事。深夜广播节目《Finale Radio》的创作者。

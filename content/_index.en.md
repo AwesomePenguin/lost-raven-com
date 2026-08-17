@@ -1,12 +1,21 @@
 ---
 title: "Lost Raven"
 links:
-  - name: "Finale Radio (example)"
-    url: "https://example.com/finale-radio"
-  - name: "Listen on Spotify (example)"
-    url: "https://example.com/spotify"
-  - name: "Follow updates (example)"
-    url: "https://example.com/updates"
+  - divider: "Music"
+  - name: "Spotify"
+    url: "https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih"
+  - name: "Apple Music"
+    url: "https://music.apple.com/us/artist/lost-raven/6790381614"
+  - divider: "Video & Radio"
+  - name: "YouTube @lost_raven_official"
+    url: "https://www.youtube.com/@lost_raven_official"
+  - name: "YouTube @finale_radio"
+    url: "https://www.youtube.com/@finale_radio"
+  - name: "Bilibili"
+    url: "https://space.bilibili.com/3707053952469257"
+  - divider: "Social"
+  - name: "Instagram"
+    url: "https://www.instagram.com/lost_raven_official"
 ---
 
-Lost Raven — music and stories, written and produced with the help of AI tools. Currently home to *Finale Radio*, a late-night comfort radio show, with more on the way.
+Music and stories. Creator of *Finale Radio*, a late-night radio show.

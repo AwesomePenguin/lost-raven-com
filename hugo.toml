@@ -43,13 +43,13 @@ publishDir   = "public"
   images      = [""]
 
   disableReadOtherPosts = true
-  enableThemeToggle     = false
+  enableThemeToggle     = true
   enableSharingButtons  = false
   enableReadingTime     = true
   enableGlobalLanguageMenu = true
 
   customCSS = []
-  customJS  = []
+  customJS  = ["/js/site.js"]
 
   [params.author]
     name = "Lost Raven"
