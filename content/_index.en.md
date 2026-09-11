@@ -1,6 +1,9 @@
 ---
 title: "Lost Raven"
 links:
+  - divider: "Artists"
+  - name: "Tokei Nano Official"
+    url: "https://tokeinano.com/"
   - divider: "Music"
   - name: "Spotify"
     url: "https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih"
@@ -18,4 +21,4 @@ links:
     url: "https://www.instagram.com/lost_raven_official"
 ---
 
-Music and stories. Creator of *Finale Radio*, a late-night radio show.
+Music and stories by producer Si Hang Xie. Creator of *Finale Radio* and producer of virtual idol and J-pop artist [Tokei Nano](https://tokeinano.com/). Releases are issued through the independent label imprint Lost Raven Records. Contact: [contact@lost-raven.com](mailto:contact@lost-raven.com).

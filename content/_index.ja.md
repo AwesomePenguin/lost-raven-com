@@ -1,6 +1,9 @@
 ---
 title: "Lost Raven"
 links:
+  - divider: "アーティスト"
+  - name: "時計奈野 Official"
+    url: "https://tokeinano.com/"
   - divider: "音楽"
   - name: "Spotify"
     url: "https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih"
@@ -18,4 +21,4 @@ links:
     url: "https://www.instagram.com/lost_raven_official"
 ---
 
-音楽と物語。深夜ラジオ番組『Finale Radio』のクリエイター。
+プロデューサー Si Hang Xie による音楽と物語。深夜ラジオ番組『Finale Radio』のクリエイターであり、バーチャルアイドル／J-popアーティスト[時計奈野](https://tokeinano.com/)のプロデューサーです。作品は独立レーベル名義 Lost Raven Records からリリースしています。連絡先：[contact@lost-raven.com](mailto:contact@lost-raven.com)。
