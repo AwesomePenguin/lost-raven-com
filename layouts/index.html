@@ -4,7 +4,7 @@
     <main class="lr-landing">
         <section class="lr-hero" aria-label="Lost Raven">
             <div class="lr-hero-mark" aria-hidden="true">
-                <img src="{{ "images/lost-raven-logo.png" | relURL }}" alt="">
+                <img src="{{ "images/lost-raven-logo.png" | relURL }}" width="400" height="400" alt="" decoding="async" fetchpriority="high">
             </div>
             <div class="lr-hero-copy">
                 <p class="lr-kicker">{{ .Params.hero_kicker }}</p>
@@ -19,7 +19,11 @@
         <section class="lr-release" id="release" aria-labelledby="release-title">
             <div class="lr-release-index" aria-hidden="true">01</div>
             <div class="lr-release-art">
-                <img src="{{ "images/defi-cover.png" | relURL }}" alt="Défi album cover" loading="lazy">
+                <picture>
+                    <source type="image/avif" srcset="{{ "images/defi-cover-480.avif" | relURL }} 480w, {{ "images/defi-cover-960.avif" | relURL }} 960w, {{ "images/defi-cover-1440.avif" | relURL }} 1440w" sizes="(max-width: 760px) 80vw, 360px">
+                    <source type="image/webp" srcset="{{ "images/defi-cover-480.webp" | relURL }} 480w, {{ "images/defi-cover-960.webp" | relURL }} 960w, {{ "images/defi-cover-1440.webp" | relURL }} 1440w" sizes="(max-width: 760px) 80vw, 360px">
+                    <img src="{{ "images/defi-cover-960.jpg" | relURL }}" srcset="{{ "images/defi-cover-480.jpg" | relURL }} 480w, {{ "images/defi-cover-960.jpg" | relURL }} 960w, {{ "images/defi-cover-1440.jpg" | relURL }} 1440w" sizes="(max-width: 760px) 80vw, 360px" width="1440" height="1440" alt="Défi album cover" loading="lazy" decoding="async">
+                </picture>
             </div>
             <div class="lr-release-copy">
                 <p class="lr-kicker">{{ .Params.release_kicker }}</p>
