@@ -4,3 +4,4 @@ resources/_gen/
 .DS_Store
 _build-check/
 .claude/
+.vscode/
