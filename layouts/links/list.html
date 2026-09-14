@@ -1,0 +1,32 @@
+{{ define "main" }}
+    <link rel="stylesheet" href="{{ "css/links.css" | relURL }}">
+
+    <div class="content-center links-page">
+        <main>
+            <div>
+                <p class="links-eyebrow">Lost Raven</p>
+                <h1>{{ .Title }}</h1>
+
+                {{ .Content }}
+
+                {{- with .Params.links }}
+                    <ul class="links-list">
+                        {{- range . }}
+                            {{- if .divider }}
+                                <li class="links-divider">{{ .divider }}</li>
+                            {{- else }}
+                                <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></li>
+                            {{- end }}
+                        {{- end }}
+                    </ul>
+                {{- end }}
+
+                {{- with .Site.Params.social }}
+                    <div>
+                        {{ partial "social-icons.html" . }}
+                    </div>
+                {{- end }}
+            </div>
+        </main>
+    </div>
+{{ end }}

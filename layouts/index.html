@@ -1,78 +1,70 @@
 {{ define "main" }}
-    <style>
-        .links-list {
-            list-style: none;
-            padding: 0;
-            margin: 1.25rem 0 0;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="{{ "css/landing.css" | relURL }}">
 
-        .links-list li {
-            list-style: none;
-            margin: 0.55rem 0;
-        }
-
-        .links-list a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 220px;
-            padding: 0.7rem 1.1rem;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.02);
-            color: inherit;
-            text-decoration: none;
-            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
-        }
-
-        .links-list a:hover,
-        .links-list a:focus-visible {
-            border-color: rgba(255, 255, 255, 0.28);
-            background: rgba(255, 255, 255, 0.04);
-            transform: translateY(-1px);
-        }
-
-        .links-divider {
-            list-style: none;
-            margin: 1.1rem 0 0.35rem;
-            padding-top: 0.8rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.18);
-            font-size: 0.72rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            opacity: 0.8;
-            text-align: center;
-        }
-    </style>
-
-    <div class="content-center">
-        <main>
-            <div>
-                <h1>{{ .Site.Title }}</h1>
-
-                {{ partial "subtitle.html" . }}
-
-                {{ .Content }}
-
-                {{- with .Params.links }}
-                    <ul class="links-list">
-                        {{- range . }}
-                            {{- if .divider }}
-                                <li class="links-divider">{{ .divider }}</li>
-                            {{- else }}
-                                <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></li>
-                            {{- end }}
-                        {{- end }}
-                    </ul>
-                {{- end }}
-
-                {{- with .Site.Params.social }}
-                    <div>
-                        {{ partial "social-icons.html" . }}
-                    </div>
-                {{- end }}
+    <main class="lr-landing">
+        <section class="lr-hero" aria-labelledby="lr-title">
+            <div class="lr-hero-mark" aria-hidden="true">
+                <img src="{{ "images/lost-raven-logo.png" | relURL }}" alt="">
             </div>
-        </main>
-    </div>
+            <div class="lr-hero-copy">
+                <p class="lr-kicker">{{ .Params.hero_kicker }}</p>
+                <h1 id="lr-title">Lost Raven</h1>
+                <p class="lr-lede">{{ .Params.hero_text }}</p>
+                <div class="lr-actions">
+                    <a class="lr-button lr-button-primary" href="#release">{{ .Params.release_action }} <span aria-hidden="true">↓</span></a>
+                    <a class="lr-button" href="{{ "links/" | relLangURL }}">{{ .Params.links_action }} <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="lr-release" id="release" aria-labelledby="release-title">
+            <div class="lr-release-index" aria-hidden="true">01</div>
+            <div class="lr-release-copy">
+                <p class="lr-kicker">{{ .Params.release_kicker }}</p>
+                <h2 id="release-title">Defi</h2>
+                <p class="lr-release-date"><time datetime="2026-09-18">{{ .Params.release_date }}</time></p>
+                <p>{{ .Params.release_text }}</p>
+            </div>
+            <div class="lr-release-actions">
+                <a class="lr-button lr-button-primary" href="https://open.spotify.com/album/6d0acb14LmcKHxZhGbigeN" target="_blank" rel="noopener noreferrer">{{ .Params.spotify_album_action }} <span aria-hidden="true">↗</span></a>
+                <a class="lr-button" href="https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih" target="_blank" rel="noopener noreferrer">{{ .Params.spotify_artist_action }} <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="lr-about" aria-labelledby="about-title">
+            <div class="lr-section-heading">
+                <p class="lr-kicker">{{ .Params.about_kicker }}</p>
+                <h2 id="about-title">{{ .Params.about_title }}</h2>
+            </div>
+            <div class="lr-about-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Lost Raven</h3>
+                    <p>{{ .Params.about_music }}</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Finale Radio</h3>
+                    <p>{{ .Params.about_radio }}</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>時計奈野</h3>
+                    <p>{{ .Params.about_nano }}</p>
+                    <a href="https://tokeinano.com/" target="_blank" rel="noopener noreferrer">tokeinano.com ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="lr-contact" aria-label="{{ .Params.contact_kicker }}">
+            <div>
+                <p class="lr-kicker">{{ .Params.contact_kicker }}</p>
+                <p>{{ .Params.contact_text }}</p>
+            </div>
+            <div class="lr-contact-actions">
+                <a href="mailto:contact@lost-raven.com">contact@lost-raven.com</a>
+                <a href="{{ "links/" | relLangURL }}">{{ .Params.all_links_action }} ↗</a>
+            </div>
+        </section>
+    </main>
 {{ end }}
