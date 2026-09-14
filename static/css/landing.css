@@ -137,8 +137,9 @@
 }
 
 .lr-release {
+    position: relative;
     display: grid;
-    grid-template-columns: 0.35fr 1fr 0.9fr;
+    grid-template-columns: minmax(260px, 0.9fr) 1fr 0.9fr;
     gap: clamp(2rem, 6vw, 6rem);
     align-items: end;
     padding-block: 7rem;
@@ -146,9 +147,21 @@
 }
 
 .lr-release-index {
-    align-self: start;
+    position: absolute;
+    top: 7rem;
+    left: 0;
     color: var(--lr-red);
     font-size: 0.8rem;
+}
+
+.lr-release-art {
+    margin-left: 2.5rem;
+}
+
+.lr-release-art img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .lr-release h2 {
@@ -211,6 +224,7 @@
 .lr-about-grid h3 {
     margin: 4rem 0 1.5rem;
     font-size: 1.45rem;
+    text-align: center;
 }
 
 .lr-about-grid p {
@@ -280,6 +294,14 @@
 
     .lr-release {
         padding-block: 5rem;
+    }
+
+    .lr-release-index {
+        top: 5rem;
+    }
+
+    .lr-release-art {
+        margin-left: 2rem;
     }
 
     .lr-release-actions {

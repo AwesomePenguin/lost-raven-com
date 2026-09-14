@@ -2,13 +2,12 @@
     <link rel="stylesheet" href="{{ "css/landing.css" | relURL }}">
 
     <main class="lr-landing">
-        <section class="lr-hero" aria-labelledby="lr-title">
+        <section class="lr-hero" aria-label="Lost Raven">
             <div class="lr-hero-mark" aria-hidden="true">
                 <img src="{{ "images/lost-raven-logo.png" | relURL }}" alt="">
             </div>
             <div class="lr-hero-copy">
                 <p class="lr-kicker">{{ .Params.hero_kicker }}</p>
-                <h1 id="lr-title">Lost Raven</h1>
                 <p class="lr-lede">{{ .Params.hero_text }}</p>
                 <div class="lr-actions">
                     <a class="lr-button lr-button-primary" href="#release">{{ .Params.release_action }} <span aria-hidden="true">↓</span></a>
@@ -19,9 +18,12 @@
 
         <section class="lr-release" id="release" aria-labelledby="release-title">
             <div class="lr-release-index" aria-hidden="true">01</div>
+            <div class="lr-release-art">
+                <img src="{{ "images/defi-cover.png" | relURL }}" alt="Défi album cover" loading="lazy">
+            </div>
             <div class="lr-release-copy">
                 <p class="lr-kicker">{{ .Params.release_kicker }}</p>
-                <h2 id="release-title">Defi</h2>
+                <h2 id="release-title">Défi</h2>
                 <p class="lr-release-date"><time datetime="2026-09-18">{{ .Params.release_date }}</time></p>
                 <p>{{ .Params.release_text }}</p>
             </div>
@@ -31,10 +33,9 @@
             </div>
         </section>
 
-        <section class="lr-about" aria-labelledby="about-title">
+        <section class="lr-about" aria-label="{{ .Params.about_kicker }}">
             <div class="lr-section-heading">
                 <p class="lr-kicker">{{ .Params.about_kicker }}</p>
-                <h2 id="about-title">{{ .Params.about_title }}</h2>
             </div>
             <div class="lr-about-grid">
                 <article>
