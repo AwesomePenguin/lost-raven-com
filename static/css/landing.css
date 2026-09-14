@@ -158,8 +158,14 @@
     margin-left: 2.5rem;
 }
 
+.lr-release-art picture {
+    display: block;
+    width: 100%;
+}
+
 .lr-release-art img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
     object-fit: cover;
 }
