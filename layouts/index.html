@@ -3,6 +3,7 @@
 
     <main class="lr-landing">
         <section class="lr-hero" aria-label="Lost Raven">
+            <h1 class="visually-hidden">Lost Raven</h1>
             <div class="lr-hero-mark" aria-hidden="true">
                 <img src="{{ "images/lost-raven-logo.png" | relURL }}" width="400" height="400" alt="" decoding="async" fetchpriority="high">
             </div>
@@ -46,11 +47,13 @@
                     <span>01</span>
                     <h3>Lost Raven</h3>
                     <p>{{ .Params.about_music }}</p>
+                    <a href="https://open.spotify.com/artist/0Wmqo5cUxohbAZjjZRebih" target="_blank" rel="noopener noreferrer">{{ .Params.spotify_follow_action }} ↗</a>
                 </article>
                 <article>
                     <span>02</span>
                     <h3>Finale Radio</h3>
                     <p>{{ .Params.about_radio }}</p>
+                    <a href="https://www.youtube.com/@finale_radio" target="_blank" rel="noopener noreferrer">{{ .Params.youtube_watch_action }} ↗</a>
                 </article>
                 <article>
                     <span>03</span>
@@ -62,19 +65,10 @@
         </section>
 
         <section class="lr-contact" aria-label="{{ .Params.contact_kicker }}">
-            <div>
-                <p class="lr-kicker">{{ .Params.contact_kicker }}</p>
-                <p>{{ .Params.contact_text }}</p>
-            </div>
             <div class="lr-contact-actions">
                 <a href="mailto:contact@lost-raven.com">contact@lost-raven.com</a>
-                <a href="mailto:contact@sihangxie.com">contact@sihangxie.com</a>
                 <a href="{{ "links/" | relLangURL }}">{{ .Params.all_links_action }} ↗</a>
             </div>
         </section>
     </main>
-
-  <footer>
-    <p>Lost Raven Records © 2026 Si Hang Xie</p>
-  </footer>
 {{ end }}

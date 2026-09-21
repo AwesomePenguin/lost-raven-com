@@ -47,19 +47,19 @@ publishDir   = "public"
   enableReadingTime     = true
   enableGlobalLanguageMenu = true
 
-  customCSS = []
+  customCSS = ["/css/site.css"]
   customJS  = ["/js/site.js"]
 
   [params.author]
     name = "Lost Raven"
 
   [params.footer]
-    trademark  = 2026
+    trademark  = false
     rss        = false
     copyright  = false
     author     = false
-    topText    = []
-    bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+    topText    = ["Lost Raven Records &copy; 2026 Si Hang Xie"]
+    bottomText = []
 
   [params.favicon.color]
     mask          = "#1b1c1d"
