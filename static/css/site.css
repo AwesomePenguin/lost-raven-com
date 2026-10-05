@@ -6,6 +6,14 @@
     font-family: Consolas, "Courier New", monospace;
 }
 
+.footer [hidden] {
+    display: none !important;
+}
+
+.footer__statement {
+    margin-top: 0.75rem;
+}
+
 html[data-theme="dark"] body {
     background-color: #0c0d0f;
     color: #e8e5df;

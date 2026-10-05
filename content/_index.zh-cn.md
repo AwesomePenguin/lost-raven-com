@@ -17,4 +17,5 @@ spotify_follow_action: "在 Spotify 关注"
 youtube_watch_action: "在 YouTube 观看"
 contact_kicker: "联系"
 all_links_action: "链接与频道"
+ai_statement_label: "AI 与我们的创作"
 ---

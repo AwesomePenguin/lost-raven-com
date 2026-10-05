@@ -17,4 +17,5 @@ spotify_follow_action: "Spotifyでフォロー"
 youtube_watch_action: "YouTubeで見る"
 contact_kicker: "Contact"
 all_links_action: "リンク & チャンネル"
+ai_statement_label: "AIと私たちの創作について"
 ---

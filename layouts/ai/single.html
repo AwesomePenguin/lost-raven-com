@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <link rel="stylesheet" href="{{ "css/ai.css" | relURL }}?v=20261005-1">
+
+    <main class="lr-statement">
+        <article aria-labelledby="statement-title">
+            <header class="lr-statement-heading">
+                <p class="lr-statement-kicker">Lost Raven</p>
+                <h1 id="statement-title">{{ .Title }}</h1>
+            </header>
+            <div class="lr-statement-body">{{ .Content }}</div>
+            <div class="lr-statement-meta">
+                <p>{{ .Params.updated_label }} <time datetime="{{ .Params.updated }}">{{ .Params.updated_display }}</time></p>
+                <a href="{{ .Site.Home.RelPermalink }}">{{ .Params.home_label }}</a>
+            </div>
+        </article>
+    </main>
+{{ end }}

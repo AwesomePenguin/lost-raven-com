@@ -1,0 +1,70 @@
+.lr-statement {
+    --statement-line: rgba(232, 229, 223, 0.2);
+    --statement-accent: #b7433d;
+    width: min(90%, 760px);
+    margin-inline: auto;
+    padding-block: 4rem 3rem;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+[data-theme="light"] .lr-statement {
+    --statement-line: rgba(32, 33, 36, 0.2);
+    --statement-accent: #9f342f;
+}
+
+.lr-statement-heading {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--statement-line);
+}
+
+.lr-statement-kicker {
+    margin: 0 0 0.9rem;
+    color: var(--statement-accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.lr-statement h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.lr-statement-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.lr-statement-body > p:first-child {
+    margin-top: 2rem;
+}
+
+.lr-statement-body h2 {
+    display: block;
+    margin: 3rem 0 1rem;
+    font-size: 1.65rem;
+    line-height: 1.4;
+}
+
+.lr-statement-body h2:last-of-type {
+    padding-top: 2rem;
+    border-top: 1px solid var(--statement-line);
+}
+
+.lr-statement-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--statement-line);
+    font-size: 0.85rem;
+}
+
+.lr-statement-meta p {
+    margin: 0;
+}

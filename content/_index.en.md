@@ -17,4 +17,5 @@ spotify_follow_action: "Follow on Spotify"
 youtube_watch_action: "Watch on YouTube"
 contact_kicker: "Contact"
 all_links_action: "Links & channels"
+ai_statement_label: "AI & Our Creative Process"
 ---

@@ -47,8 +47,8 @@ publishDir   = "public"
   enableReadingTime     = true
   enableGlobalLanguageMenu = true
 
-  customCSS = ["/css/site.css"]
-  customJS  = ["/js/site.js"]
+  customCSS = ["/css/site.css?v=20261005-1"]
+  customJS  = ["/js/site.js?v=20261005-1"]
 
   [params.author]
     name = "Lost Raven"
