@@ -58,7 +58,7 @@ publishDir   = "public"
     rss        = false
     copyright  = false
     author     = false
-    topText    = ["Lost Raven Records &copy; 2026 Si Hang Xie"]
+    topText    = ["Lost Raven Records &copy; 2026"]
     bottomText = []
 
   [params.favicon.color]
